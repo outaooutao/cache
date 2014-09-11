@@ -17,7 +17,7 @@ int line=0;
 void handler(union sigval v)
 {
 	
-	printf("handler called\n");
+	//printf("handler called\n");
 	redisContext *conn = redisConnect("127.0.0.1", 6379);
 	int cached;
 	
@@ -58,7 +58,7 @@ void handler(union sigval v)
 
 int main()
 {
-	printf("sb\n");
+	
 	START=(int)time(NULL)+30;
 	printf("%d\n",START);
 
